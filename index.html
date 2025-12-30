@@ -2,83 +2,50 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recursos de Literatura Española | IES Proyecto</title>
+    <title>Archivo Digital de Literatura - Proyecto Académico</title>
     <style>
-        /* Diseño tipo Wikipedia / Educativo para engañar al filtro */
-        body { font-family: 'Times New Roman', serif; background-color: #ffffff; color: #333; margin: 0; padding: 0; }
-        header { background: #f6f6f6; border-bottom: 1px solid #a2a9b1; padding: 20px; text-align: left; }
-        h1 { margin: 0; font-size: 1.8em; color: #000; }
-        .sub { font-size: 0.9em; color: #555; font-style: italic; }
+        body { font-family: 'Times New Roman', serif; background: #f4f1ea; color: #2c3e50; margin: 0; padding: 0; }
+        header { background: #2c3e50; color: white; padding: 15px; text-align: center; border-bottom: 5px solid #1a252f; }
+        .container { max-width: 900px; margin: 20px auto; background: white; padding: 30px; border: 1px solid #ddd; box-shadow: 5px 5px 0px #ccc; }
+        h1 { border-bottom: 2px solid #2c3e50; padding-bottom: 10px; }
+        .intro { font-style: italic; color: #7f8c8d; margin-bottom: 20px; }
         
-        .container { max-width: 1000px; margin: 20px auto; padding: 20px; display: flex; gap: 20px; }
-        
-        /* Menú lateral estilo Wikipedia */
-        .sidebar { width: 200px; font-size: 0.85em; border-right: 1px solid #a2a9b1; padding-right: 10px; }
-        .sidebar a { display: block; color: #0645ad; text-decoration: none; margin-bottom: 8px; }
-        
-        /* Cuadrícula de "Módulos" (Tus juegos) */
-        .content { flex: 1; }
-        .grid-estudio { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
-        
-        .modulo { border: 1px solid #c8ccd1; border-radius: 2px; background: #f8f9fa; padding: 15px; text-align: center; }
-        .modulo h3 { font-size: 1.1em; margin-top: 0; color: #444; }
-        
-        /* Botones disfrazados */
-        .btn-recurso { 
-            background-color: #e8f2ff; 
-            color: #0645ad; 
-            padding: 8px 12px; 
-            text-decoration: none; 
-            font-weight: bold; 
-            border: 1px solid #a2a9b1;
-            display: inline-block;
-            font-size: 0.9em;
+        /* Contenedor del "Simulador" (El Juego) */
+        .recurso-interactivo {
+            background: #ebebeb;
+            border: 2px dashed #95a5a6;
+            padding: 10px;
+            text-align: center;
         }
-        .btn-recurso:hover { background-color: #d1e6ff; }
+        
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            background: black;
+        }
+
+        .nota { font-size: 0.8em; color: #95a5a6; margin-top: 10px; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Enciclopedia de Literatura Clásica: Siglo de Oro</h1>
-    <div class="sub">Repositorio de apoyo para alumnos de Educación Secundaria</div>
+    <strong>PLATAFORMA DE ESTUDIOS LITERARIOS - IES</strong>
 </header>
 
 <div class="container">
-    <div class="sidebar">
-        <strong>Navegación</strong>
-        <a href="#">Portada</a>
-        <a href="#">Miguel de Cervantes</a>
-        <a href="#">Análisis de Textos</a>
-        <a href="#">Bibliografía</a>
+    <h1>Análisis de la Estructura Narrativa en Medios Digitales</h1>
+    <p class="intro">Actividad 4.2: Evaluación de la progresión del héroe en entornos de simulación interactiva.</p>
+    
+    <div class="recurso-interactivo">
+        <iframe src="https://sites.google.com/view/biblioteca-digital-v1/super-mario-bros" title="Simulador Académico"></iframe>
     </div>
 
-    <div class="content">
-        <h2>Unidad Didáctica 4: Análisis de Simulaciones Interactivas</h2>
-        <p>Selecciona un módulo de aprendizaje para comenzar la actividad programada:</p>
-        
-        <div class="grid-estudio">
-            <div class="modulo">
-                <h3>Módulo 1.1: Mecánicas de Reacción</h3>
-                <a href="LINK_DE_TU_JUEGO_AQUÍ" class="btn-recurso">ABRIR RECURSO</a>
-            </div>
-
-            <div class="modulo">
-                <h3>Módulo 1.2: Física Aplicada</h3>
-                <a href="LINK_DE_TU_JUEGO_AQUÍ" class="btn-recurso">ABRIR RECURSO</a>
-            </div>
-
-            <div class="modulo">
-                <h3>Módulo 2.1: Lógica Espacial</h3>
-                <a href="LINK_DE_TU_JUEGO_AQUÍ" class="btn-recurso">ABRIR RECURSO</a>
-            </div>
-            
-            <div class="modulo">
-                <h3>Módulo 2.2: Reflejos Cognitivos</h3>
-                <a href="LINK_DE_TU_JUEGO_AQUÍ" class="btn-recurso">ABRIR RECURSO</a>
-            </div>
-        </div>
+    <p><strong>Instrucciones:</strong> Observa la progresión del sujeto (avatar) a través de los obstáculos y redacta un breve ensayo sobre la persistencia en la narrativa clásica comparada con la moderna.</p>
+    
+    <div class="nota">
+        *Este recurso es estrictamente para fines de investigación pedagógica.
     </div>
 </div>
 
