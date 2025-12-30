@@ -3,24 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Juegos Unblocked</title>
+    <title>Biblioteca Digital</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #1a1a1a; color: white; text-align: center; }
-        .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
-        .game-card { width: 200px; border: 2px solid #444; border-radius: 10px; padding: 10px; background: #333; transition: 0.3s; }
-        .game-card:hover { transform: scale(1.05); border-color: #00ff00; }
-        img { width: 100%; border-radius: 5px; }
-        a { color: #00ff00; text-decoration: none; font-weight: bold; }
+        /* Estilos base (Similares a Google Sites) */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f8f9fa; color: #3c4043; }
+        
+        /* Barra de Navegación */
+        nav { background: white; padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        nav .logo { font-size: 1.5rem; font-weight: bold; color: #1a73e8; }
+        nav ul { list-style: none; display: flex; gap: 20px; margin: 0; }
+        nav a { text-decoration: none; color: #5f6368; font-weight: 500; }
+        nav a:hover { color: #1a73e8; }
+
+        /* Banner Principal (Hero) */
+        header { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1500&q=80'); 
+                 background-size: cover; background-position: center; height: 300px; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
+        header h1 { font-size: 3rem; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+
+        /* Contenedor de contenido */
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        
+        /* Cuadrícula de elementos (como en Google Sites) */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.12); transition: 0.3s; border: 1px solid #e0e0e0; }
+        .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.15); transform: translateY(-5px); }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .card-content h3 { margin-top: 0; color: #202124; }
+        .btn { display: inline-block; background: #1a73e8; color: white; padding: 10px 20px; border-radius: 4px; text-decoration: none; margin-top: 10px; }
+        .btn:hover { background: #1765cc; }
+
+        footer { text-align: center; padding: 40px; color: #70757a; font-size: 0.9rem; }
     </style>
 </head>
 <body>
-    <h1>🎮 Portal de Juegos Unblocked</h1>
+
+    <nav>
+        <div class="logo">Mi Biblioteca Digital</div>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Libros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Bienvenidos a la Biblioteca</h1>
+    </header>
+
     <div class="container">
-        <div class="game-card">
-            <img src="https://via.placeholder.com/150" alt="Juego 1">
-            <h3>Nombre del Juego</h3>
-            <a href="URL_DEL_JUEGO">JUGAR AHORA</a>
+        <h2>Secciones Destacadas</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=500&q=80" alt="Libro">
+                <div class="card-content">
+                    <h3>Literatura Clásica</h3>
+                    <p>Explora las obras que marcaron la historia de la humanidad.</p>
+                    <a href="#" class="btn">Ver más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=500&q=80" alt="Libro">
+                <div class="card-content">
+                    <h3>Ciencia y Tecnología</h3>
+                    <p>Mantente al día con los últimos avances y descubrimientos.</p>
+                    <a href="#" class="btn">Ver más</a>
+                </div>
+            </div>
         </div>
-        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Biblioteca Digital v1 - Creado con GitHub Pages
+    </footer>
+
 </body>
 </html>
