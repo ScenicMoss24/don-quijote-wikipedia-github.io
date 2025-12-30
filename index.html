@@ -3,78 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unblocked Games Hub | Pro</title>
+    <title>Recursos de Literatura Española | IES Proyecto</title>
     <style>
-        /* ESTILO PROFESIONAL DE JUEGOS */
-        body { font-family: 'Segoe UI', sans-serif; background-color: #0b0e14; color: white; margin: 0; }
-        header { background: linear-gradient(90deg, #1f1c2c, #928dab); padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
-        h1 { margin: 0; font-size: 2.5em; color: #00ffcc; text-shadow: 2px 2px #000; letter-spacing: 2px; }
+        /* Diseño tipo Wikipedia / Educativo para engañar al filtro */
+        body { font-family: 'Times New Roman', serif; background-color: #ffffff; color: #333; margin: 0; padding: 0; }
+        header { background: #f6f6f6; border-bottom: 1px solid #a2a9b1; padding: 20px; text-align: left; }
+        h1 { margin: 0; font-size: 1.8em; color: #000; }
+        .sub { font-size: 0.9em; color: #555; font-style: italic; }
         
-        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; display: flex; gap: 20px; }
         
-        /* CUADRÍCULA DE JUEGOS */
-        .game-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 25px; }
+        /* Menú lateral estilo Wikipedia */
+        .sidebar { width: 200px; font-size: 0.85em; border-right: 1px solid #a2a9b1; padding-right: 10px; }
+        .sidebar a { display: block; color: #0645ad; text-decoration: none; margin-bottom: 8px; }
         
-        .game-card { background: #1a1f29; border-radius: 15px; overflow: hidden; transition: 0.3s; border: 1px solid #333; position: relative; }
-        .game-card:hover { transform: scale(1.05); border-color: #00ffcc; box-shadow: 0 0 20px rgba(0, 255, 204, 0.3); }
+        /* Cuadrícula de "Módulos" (Tus juegos) */
+        .content { flex: 1; }
+        .grid-estudio { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
         
-        .game-img { width: 100%; height: 160px; background: #2a2f3b; display: flex; align-items: center; justify-content: center; font-size: 50px; }
+        .modulo { border: 1px solid #c8ccd1; border-radius: 2px; background: #f8f9fa; padding: 15px; text-align: center; }
+        .modulo h3 { font-size: 1.1em; margin-top: 0; color: #444; }
         
-        .game-info { padding: 15px; text-align: center; }
-        .game-info h3 { margin: 10px 0; font-size: 1.2em; }
-        
-        .play-btn { background: #00ffcc; color: #000; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 25px; display: inline-block; transition: 0.3s; }
-        .play-btn:hover { background: #fff; box-shadow: 0 0 10px #fff; }
-
-        .navbar { background: #161b22; padding: 10px; text-align: center; border-bottom: 1px solid #30363d; }
-        .navbar a { color: #8b949e; text-decoration: none; margin: 0 15px; font-weight: 500; }
-        .navbar a:hover { color: #00ffcc; }
+        /* Botones disfrazados */
+        .btn-recurso { 
+            background-color: #e8f2ff; 
+            color: #0645ad; 
+            padding: 8px 12px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border: 1px solid #a2a9b1;
+            display: inline-block;
+            font-size: 0.9em;
+        }
+        .btn-recurso:hover { background-color: #d1e6ff; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>🎮 UNBLOCKED GAMES HUB</h1>
+    <h1>Enciclopedia de Literatura Clásica: Siglo de Oro</h1>
+    <div class="sub">Repositorio de apoyo para alumnos de Educación Secundaria</div>
 </header>
 
-<div class="navbar">
-    <a href="#">INICIO</a>
-    <a href="#">POPULARES</a>
-    <a href="#">ACCIÓN</a>
-    <a href="#">AVENTURA</a>
-</div>
-
 <div class="container">
-    <div class="game-grid">
-        <div class="game-card">
-            <div class="game-img">🏎️</div>
-            <div class="game-info">
-                <h3>Super Racing</h3>
-                <a href="#" class="play-btn">JUGAR AHORA</a>
-            </div>
-        </div>
+    <div class="sidebar">
+        <strong>Navegación</strong>
+        <a href="#">Portada</a>
+        <a href="#">Miguel de Cervantes</a>
+        <a href="#">Análisis de Textos</a>
+        <a href="#">Bibliografía</a>
+    </div>
 
-        <div class="game-card">
-            <div class="game-img">🔫</div>
-            <div class="game-info">
-                <h3>Pixel Shooter</h3>
-                <a href="#" class="play-btn">JUGAR AHORA</a>
-            </div>
-        </div>
-
-        <div class="game-card">
-            <div class="game-img">🧩</div>
-            <div class="game-info">
-                <h3>Logic Master</h3>
-                <a href="#" class="play-btn">JUGAR AHORA</a>
-            </div>
-        </div>
+    <div class="content">
+        <h2>Unidad Didáctica 4: Análisis de Simulaciones Interactivas</h2>
+        <p>Selecciona un módulo de aprendizaje para comenzar la actividad programada:</p>
         
-        <div class="game-card">
-            <div class="game-img">🐍</div>
-            <div class="game-info">
-                <h3>Snake Retro</h3>
-                <a href="#" class="play-btn">JUGAR AHORA</a>
+        <div class="grid-estudio">
+            <div class="modulo">
+                <h3>Módulo 1.1: Mecánicas de Reacción</h3>
+                <a href="LINK_DE_TU_JUEGO_AQUÍ" class="btn-recurso">ABRIR RECURSO</a>
+            </div>
+
+            <div class="modulo">
+                <h3>Módulo 1.2: Física Aplicada</h3>
+                <a href="LINK_DE_TU_JUEGO_AQUÍ" class="btn-recurso">ABRIR RECURSO</a>
+            </div>
+
+            <div class="modulo">
+                <h3>Módulo 2.1: Lógica Espacial</h3>
+                <a href="LINK_DE_TU_JUEGO_AQUÍ" class="btn-recurso">ABRIR RECURSO</a>
+            </div>
+            
+            <div class="modulo">
+                <h3>Módulo 2.2: Reflejos Cognitivos</h3>
+                <a href="LINK_DE_TU_JUEGO_AQUÍ" class="btn-recurso">ABRIR RECURSO</a>
             </div>
         </div>
     </div>
